@@ -1,0 +1,11 @@
+Use __init__ file in every folder. Because when we create our own package then in it file will indicate the package. 
+For example, there is one folder under At folder, there is file with that file. We will write __init __that will show that this is a part of the package. 
+Inside that package there will be another folder which also include the __init __ file This all include makes one package which is local package 
+
+
+
+
+To instal local package in local environment:-
+1. pip install .pcakge name
+2. in requirement.txt file 
+		- pip insatll -e requirement.txt
