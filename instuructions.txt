@@ -9,3 +9,26 @@ To instal local package in local environment:-
 1. pip install .pcakge name
 2. in requirement.txt file 
 		- pip insatll -e requirement.txt
+
+
+
+steps in devloping software (Dev oop's pipeline)
+			(Devlpment)
+
+1. devlope (in python always pass code for testing in the form of packages)
+2. testing 
+3. QA
+			(operation)
+
+4. Dilivery / deployment
+5. monitoring 
+6. Maintenance
+
+
+
+
+******* to run setup.py file 
+create setup.py file 
+then in requirements.txt file 
+
+			-e .  (write this)
