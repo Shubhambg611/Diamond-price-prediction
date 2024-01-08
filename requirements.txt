@@ -5,5 +5,3 @@ numpy
 
 -e .
 
-
-data
