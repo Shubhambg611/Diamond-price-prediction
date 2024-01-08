@@ -4,3 +4,6 @@ numpy
 
 
 -e .
+
+
+data
