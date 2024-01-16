@@ -21,6 +21,4 @@ if __name__ == "__main__":
         
         a=1/0
     
-    except Exception as e:
-        raise customexception(e,sys)
-        
+    except Exception as e:        raise customexception(e,sys)
