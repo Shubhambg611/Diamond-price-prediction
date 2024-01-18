@@ -18,17 +18,22 @@ class DataIngestion:
     def initiate_data_injection(self):
         logging.info("Data injection started")
         
-        
-        os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exists=True)
-        data.to_csv(self.ingestion_config.raw_data_path,index=False)
-        
         try:
             data = pd.read_csv(Path(os.path.join("notebooks/data","train.csv")))
             logging.info("read the data set as data frame ")
+            
+            os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exists=True)
+            data.to_csv(self.ingestion_config.raw_data_path,index=False)
+            logging.info("I have saved the raw data in artifact folder")
             
             
             logging.info("I have now performed train test split")
             
             train_data,test_data = train_test_split(data,test_size=0.25) 
-            logging,info("train test split completed")
+            logging,info("train test split completed")  
             
+            
+            
+        except Expetion as e:
+            pass
+        
