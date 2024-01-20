@@ -1,0 +1,6 @@
+[2024-01-20 12:54:46,123] 22 root - INFO - Data injection started
+[2024-01-20 12:54:46,230] 26 root - INFO - read the data set as data frame 
+[2024-01-20 12:54:47,191] 30 root - INFO - I have saved the raw data in artifact folder
+[2024-01-20 12:54:47,191] 33 root - INFO - I have now performed train test split
+[2024-01-20 12:54:47,219] 36 root - INFO - train test split completed
+[2024-01-20 12:54:47,219] 45 root - INFO - excpetion during occured 

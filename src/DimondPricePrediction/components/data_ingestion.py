@@ -1,15 +1,18 @@
 import pandas as pd
 import numpy as np
 from src.DimondPricePrediction.logger import logging
-from sklearn.model_selection import train_test_split
 from src.DimondPricePrediction.exception import customexception 
+
+import os
+import sys
+from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
-from pathlib import path 
+from pathlib import Path 
 
 class DataIngestionConfig:
     raw_data_path: str=os.path.join("artifact","raw.csv")
-    train_data_path: str=os.path.join("artifacts","train.csv")
-    test_data_path: str=os.path.join("artifacts","test.csv")
+    train_data_path: str=os.path.join("artifact","train.csv")
+    test_data_path: str=os.path.join("artifact","test.csv")
 
 class DataIngestion:
     def __init__(self):
@@ -22,8 +25,8 @@ class DataIngestion:
             data = pd.read_csv(Path(os.path.join("notebooks/data","train.csv")))
             logging.info("read the data set as data frame ")
             
-            os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exists=True)
-            data.to_csv(self.ingestion_config.raw_data_path,index=False)
+            os.makedirs(os.path.dirname(os.path.join(self.injection_config.raw_data_path)),exist_ok=True)
+            data.to_csv(self.injection_config.raw_data_path,index=False)
             logging.info("I have saved the raw data in artifact folder")
             
             
@@ -31,12 +34,20 @@ class DataIngestion:
             
             train_data,test_data = train_test_split(data,test_size=0.25) 
             logging.info("train test split completed")  
-            train_data.to_csv(self.ingestion_config.train_data_path,index=False)
-            test_data.to_csv(self.ingestion_config.test_data_path,index=false)
+            
+            train_data.to_csv(self.injection_config.train_data_path,index=False)
+            test_data.to_csv(self.injection_config.test_data_path,index=False)
             
             logging.info("Data ingesion part is completed")
             
+            return (
+                
+                self.injection_config.train_data_path,
+                self.injection_config.test_data_path
+            )
             
-        except Expetion as e:
+        except Exception as e:
             logging.info("excpetion during occured ")
+            raise customexception(e,sys)
+        
         
