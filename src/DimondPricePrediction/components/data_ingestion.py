@@ -30,10 +30,13 @@ class DataIngestion:
             logging.info("I have now performed train test split")
             
             train_data,test_data = train_test_split(data,test_size=0.25) 
-            logging,info("train test split completed")  
+            logging.info("train test split completed")  
+            train_data.to_csv(self.ingestion_config.train_data_path,index=False)
+            test_data.to_csv(self.ingestion_config.test_data_path,index=false)
             
+            logging.info("Data ingesion part is completed")
             
             
         except Expetion as e:
-            pass
+            logging.info("excpetion during occured ")
         
