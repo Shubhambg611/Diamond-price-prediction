@@ -1,6 +1,6 @@
 
 import os
-import sys 
+import sys  
 import pandas as pd 
 import numpy as np
 
@@ -97,9 +97,7 @@ class DataTransformation:
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
             )
-            
-        
-        
+  
         except Exception as e:
             logging.info("Exception occured in the inintiate_dataTransformation")
             raise customexception(e,sys)
