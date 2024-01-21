@@ -34,7 +34,7 @@ class ModelTrainer:
             'LinearRegression':LinearRegression(),
             'Lasso':Lasso(),
             'Ridge':Ridge(),
-            'ElasticNet':ElasticNet()
+            'Elasticnet':ElasticNet()
         }
             
             model_report:dict=evaluate_model(X_train,y_train,X_test,y_test,models)
@@ -56,12 +56,11 @@ class ModelTrainer:
             logging.info(f'Best Model Found , Model Name : {best_model_name} , R2 Score : {best_model_score}')
 
             save_object(
-                file_path=self.model_trainer_config.trained_model_file_path,
-                obj=best_model
-                )
+                 file_path=self.model_trainer_config.trained_model_file_path,
+                 obj=best_model
+            )
+          
 
         except Exception as e:
             logging.info('Exception occured at Model Training')
             raise customexception(e,sys)
-
-        

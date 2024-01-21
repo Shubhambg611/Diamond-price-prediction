@@ -1,0 +1,25 @@
+[2024-01-21 14:03:36,861] 22 root - INFO - Data injection started
+[2024-01-21 14:03:36,970] 26 root - INFO - read the data set as data frame 
+[2024-01-21 14:03:37,909] 30 root - INFO - I have saved the raw data in artifact folder
+[2024-01-21 14:03:37,910] 33 root - INFO - I have now performed train test split
+[2024-01-21 14:03:37,939] 36 root - INFO - train test split completed
+[2024-01-21 14:03:38,906] 41 root - INFO - Data ingesion part is completed
+[2024-01-21 14:03:39,042] 80 root - INFO - reading of training and testing data
+[2024-01-21 14:03:39,046] 81 root - INFO - train dataframe head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0   17022   1.17      Ideal     G     SI2   62.5   56.0  6.72  6.77  4.22   5174
+1   64629   0.50  Very Good     E     SI2   61.9   58.0  5.07  5.11  3.15   1120
+2  184677   1.05  Very Good     I     SI1   62.9   58.0  6.47  6.52  4.09   4368
+3  108466   0.71      Ideal     G    VVS1   62.8   55.0  5.68  5.72  3.58   3417
+4  102589   1.50  Very Good     I     VS2   60.9   59.0  7.32  7.37  4.48   9116
+[2024-01-21 14:03:39,099] 82 root - INFO - test dataframe head : 
+      id  carat      cut color clarity  depth  table     x     y     z  price
+0   9312   0.70  Premium     F     SI1   59.4   59.0  5.84  5.79  3.44   2753
+1  70471   0.72     Good     G     VS2   62.9   61.0  5.71  5.68  3.57   2650
+2  95827   0.75    Ideal     G     SI1   61.7   57.0  5.78  5.83  3.58   2560
+3   9636   0.40    Ideal     I    VVS2   61.7   56.0  4.77  4.73  2.93   1080
+4  65680   0.30    Ideal     G    VVS1   62.1   54.0  4.31  4.34  2.69    789
+[2024-01-21 14:03:39,099] 29 root - INFO - data transformation initiated
+[2024-01-21 14:03:39,099] 39 root - INFO - Pipeline initiated
+[2024-01-21 14:03:39,368] 97 root - INFO - applying pre processing on data
+[2024-01-21 14:03:39,431] 107 root - INFO - preprocessor object pickel file saved

@@ -1,0 +1,25 @@
+[2024-01-21 13:14:53,691] 22 root - INFO - Data injection started
+[2024-01-21 13:14:53,813] 26 root - INFO - read the data set as data frame 
+[2024-01-21 13:14:54,653] 30 root - INFO - I have saved the raw data in artifact folder
+[2024-01-21 13:14:54,654] 33 root - INFO - I have now performed train test split
+[2024-01-21 13:14:54,682] 36 root - INFO - train test split completed
+[2024-01-21 13:14:55,567] 41 root - INFO - Data ingesion part is completed
+[2024-01-21 13:14:55,700] 80 root - INFO - reading of training and testing data
+[2024-01-21 13:14:55,725] 81 root - INFO - train dataframe head : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0  131344   0.41    Ideal     F    VVS2   62.0   56.0  4.77  4.74  2.95   1115
+1  178808   0.52    Ideal     F     VS1   62.3   56.0  5.18  5.16  3.22   1776
+2  137324   0.77    Ideal     H     SI1   61.5   56.0  5.90  5.93  3.63   2728
+3  122207   0.42  Premium     F    VVS2   61.6   59.0  4.84  4.80  2.97   1141
+4  133255   0.50    Ideal     E     SI1   61.3   57.0  5.13  5.10  3.14   1338
+[2024-01-21 13:14:55,729] 82 root - INFO - test dataframe head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0  118622   0.30  Very Good     F     VS2   61.6   61.0  4.27  4.30  2.64    394
+1   81009   0.30      Ideal     G     VS2   62.9   56.0  4.30  4.25  2.69    675
+2   97446   1.13  Very Good     H     SI1   61.2   56.0  6.71  6.75  4.10   5320
+3  186631   0.51    Premium     D     VS1   59.9   58.0  5.16  5.12  3.07   1835
+4  157882   1.00  Very Good     F     SI1   62.4   58.0  6.32  6.38  3.96   4398
+[2024-01-21 13:14:55,729] 29 root - INFO - data transformation initiated
+[2024-01-21 13:14:55,729] 39 root - INFO - Pipeline initiated
+[2024-01-21 13:14:55,729] 68 root - INFO - Exception occured in the inintiate_dataTransformation
+[2024-01-21 13:14:55,729] 112 root - INFO - Exception occured in the inintiate_dataTransformation

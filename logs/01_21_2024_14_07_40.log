@@ -1,0 +1,28 @@
+[2024-01-21 14:07:40,748] 22 root - INFO - Data injection started
+[2024-01-21 14:07:40,858] 26 root - INFO - read the data set as data frame 
+[2024-01-21 14:07:41,803] 30 root - INFO - I have saved the raw data in artifact folder
+[2024-01-21 14:07:41,803] 33 root - INFO - I have now performed train test split
+[2024-01-21 14:07:41,831] 36 root - INFO - train test split completed
+[2024-01-21 14:07:42,855] 41 root - INFO - Data ingesion part is completed
+[2024-01-21 14:07:43,001] 80 root - INFO - reading of training and testing data
+[2024-01-21 14:07:43,006] 81 root - INFO - train dataframe head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0  183973   1.56    Premium     H    VVS2   60.7   61.0  7.47  7.44  4.53  12316
+1   40206   0.73      Ideal     D     SI2   62.5   57.0  5.74  5.79  3.60   2666
+2   67680   1.02       Good     D     SI1   63.3   58.0  6.38  6.35  4.03   5198
+3   58709   0.33      Ideal     G    VVS2   62.4   56.0  4.42  4.47  2.77    715
+4  124749   0.73  Very Good     I     VS2   59.8   57.0  5.85  5.89  3.52   2409
+[2024-01-21 14:07:43,048] 82 root - INFO - test dataframe head : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0    9918   0.26    Premium     H    VVS1   61.7   59.0  4.09  4.13  2.53    504
+1   93306   0.40      Ideal     E    VVS2   62.4   56.0  4.72  4.77  2.96   1031
+2   42248   0.33  Very Good     H      IF   61.1   58.0  4.43  4.46  2.71    579
+3   20310   2.09  Very Good     I     SI2   59.9   59.0  8.28  8.37  4.98  14065
+4  169403   1.30      Ideal     G     VS1   62.4   54.0  6.96  6.96  4.34  10640
+[2024-01-21 14:07:43,048] 29 root - INFO - data transformation initiated
+[2024-01-21 14:07:43,048] 39 root - INFO - Pipeline initiated
+[2024-01-21 14:07:43,323] 97 root - INFO - applying pre processing on data
+[2024-01-21 14:07:43,331] 107 root - INFO - preprocessor object pickel file saved
+[2024-01-21 14:07:43,333] 25 root - INFO - Splitting Dependent and Independent variables from train and test data
+[2024-01-21 14:07:43,919] 43 root - INFO - Model Report : {'LinearRegression': 0.9375645698647213, 'Lasso': 0.93753398005684, 'Ridge': 0.9375636756971032, 'Elasticnet': 0.8550607069694488}
+[2024-01-21 14:07:43,920] 56 root - INFO - Best Model Found , Model Name : LinearRegression , R2 Score : 0.9375645698647213
