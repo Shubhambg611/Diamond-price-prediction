@@ -93,11 +93,21 @@ class DataTransformation:
 
             logging.info("applying pre processing on data")
             
+            train_arr = np.c_[input_feature_train_arr, np.array(target_feature_train_df)]
+            test_arr = np.c_[input_feature_test_arr, np.array(target_feature_test_df)]
+            
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
                 obj=preprocessing_obj
             )
-  
+        
+            logging.info("preprocessor object pikckel file saved")
+            
+            return (
+                train_arr,
+                test_arr 
+            )
+                   
         except Exception as e:
             logging.info("Exception occured in the inintiate_dataTransformation")
             raise customexception(e,sys)
