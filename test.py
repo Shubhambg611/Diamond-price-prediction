@@ -1,10 +1,7 @@
-# this will show the how templet.py will execute 
+from src.DimondPricePrediction.pipelines.prediction_pipeline import CustomData 
 
-import os 
+custdataobj = CustomData(1.52,62.2,58.0,7.27,7.33,4.55,"Premium","F","VS2")
 
-path = "notebook/research.ipynb"
-dir,file = os.path.split(path)
-os.makedirs(dir,exist_ok=True) #exits will not thorugh error if dir already exists 
+data=custdataobj.get_data_as_dataframe()
 
-with open(path,"w") as f:
-    pass
+print(data)
