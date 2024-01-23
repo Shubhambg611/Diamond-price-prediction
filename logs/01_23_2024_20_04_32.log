@@ -1,0 +1,8 @@
+[2024-01-23 20:04:33,859] 96 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.31.226:80
+[2024-01-23 20:04:35,164] 96 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[2024-01-23 20:04:40,445] 96 werkzeug - INFO - 127.0.0.1 - - [23/Jan/2024 20:04:40] "GET / HTTP/1.1" 200 -
+[2024-01-23 20:05:26,788] 96 werkzeug - INFO - 127.0.0.1 - - [23/Jan/2024 20:05:26] "GET / HTTP/1.1" 200 -
+[2024-01-23 20:05:27,888] 96 werkzeug - INFO - 127.0.0.1 - - [23/Jan/2024 20:05:27] "GET / HTTP/1.1" 200 -
